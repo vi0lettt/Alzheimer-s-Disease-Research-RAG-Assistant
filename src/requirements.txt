@@ -1,0 +1,16 @@
+pandas
+numpy
+faiss-cpu
+sentence-transformers
+streamlit
+transformers
+torch
+tokenizers
+openai
+python-dotenv
+nltk
+scikit-learn
+matplotlib
+requests
+biopython
+tqdm
