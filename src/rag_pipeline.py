@@ -8,17 +8,13 @@ from typing import Optional, Dict, List
 from openai import OpenAI
 import re
 
-# ---------------------------
-# --- Загрузка .env и API-ключа OpenRouter ---
-# ---------------------------
-load_dotenv()  # ищет .env в текущей папке
+
+load_dotenv()  
 OPENROUTER_API_KEY = os.environ.get("OPENROUTER_API_KEY")
 if not OPENROUTER_API_KEY:
     raise RuntimeError("Укажите OPENROUTER_API_KEY в окружении или в .env")
 
-# ---------------------------
-# --- Настройка DeepSeek/OpenRouter ---
-# ---------------------------
+
 DEFAULT_MODEL = "tngtech/deepseek-r1t2-chimera:free"
 
 class OpenRouterChat:
